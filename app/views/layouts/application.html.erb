@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ShirasuApp</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="shirasu.css">
+  <title>しらすのおへや</title>
 
-  <body>
-    <%= yield %>
+  <script src="https://kit.fontawesome.com/18c22e2dce.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<header>
+
+<h1 class="headline">
+  <a href="index.html">しらすのおへや</a>
+</h1>
+
+  <div>
+  <nav>
+      <ul class="nav-list">
+          <li class="nav-list-item">
+          <li class="nav-list-item">HOME</li>
+            <li class="nav-list-item">ABOUT</li>
+            <li class="nav-list-item">ILLUST</li>
+             <li class="nav-list-item">SHOP</li>
+              <li class="nav-list-item">CONTACT</li>
+         </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+</div>
+
   </body>
+
+
+<%= yield %>
+
+
+<footer>
+  <p class="footer-text">© shirasu_usami.Ine.</p> 
+  <!-- <div class="social">
+  <i class="fab fa-twitter-square"></i>
+　　 <i class="fas fa-envelope"></i> -->
+</footer>
+</body>
 </html>
+   
